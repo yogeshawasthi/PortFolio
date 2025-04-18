@@ -16,9 +16,11 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center md:text-left">
+            About Me
+          </h2>
           <div className="bg-slate-100 dark:bg-slate-800 rounded-2xl p-6 shadow-md">
-            <p className="text-lg leading-relaxed">
+            <p className="text-base sm:text-lg leading-relaxed text-center md:text-left">
               Hello! 👋 I'm <span className="font-semibold text-indigo-500">Yogesh Awasthi</span>, a passionate frontend developer with a love for crafting elegant and responsive web interfaces.
               <br />
               <br />
@@ -41,7 +43,7 @@ const About = () => {
           <img
             src={profile}
             alt="Profile"
-            className="w-72 h-72 rounded-3xl object-cover border-4 border-indigo-500 shadow-lg"
+            className="w-48 h-48 sm:w-60 sm:h-60 md:w-72 md:h-72 rounded-3xl object-cover border-4 border-indigo-500 shadow-lg"
           />
         </motion.div>
       </div>
