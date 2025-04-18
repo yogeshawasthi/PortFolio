@@ -5,11 +5,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 px-6 bg-gradient-to-tr from-slate-900 to-slate-800 text-white"
+      className="py-16 px-4 sm:py-20 sm:px-6 bg-gradient-to-tr from-slate-900 to-slate-800 text-white"
     >
       <div className="max-w-3xl mx-auto">
         <motion.h2
-          className="text-4xl font-bold text-center mb-12"
+          className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12"
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -19,7 +19,7 @@ const Contact = () => {
         </motion.h2>
 
         <motion.form
-          className="space-y-8"
+          className="space-y-6 sm:space-y-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -84,7 +84,7 @@ const Contact = () => {
           <div className="text-center">
             <button
               type="submit"
-              className="bg-indigo-500 hover:bg-indigo-600 px-8 py-3 rounded-full text-white text-lg font-medium transition"
+              className="bg-indigo-500 hover:bg-indigo-600 px-6 sm:px-8 py-3 rounded-full text-white text-base sm:text-lg font-medium transition"
             >
               Send Message
             </button>

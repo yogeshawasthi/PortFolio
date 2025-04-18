@@ -15,22 +15,25 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="py-20 px-6 bg-white dark:bg-slate-900 text-gray-900 dark:text-white"
+      className="py-20 px-4 sm:px-6 bg-white dark:bg-slate-900 text-gray-900 dark:text-white"
     >
       <div className="max-w-6xl mx-auto text-center space-y-10">
-        <h2 className="text-4xl font-bold">Projects</h2>
-        <p className="text-gray-500 dark:text-gray-400 text-lg">
+        <h2 className="text-3xl sm:text-4xl font-bold">Projects</h2>
+        <p className="text-gray-500 dark:text-gray-400 text-base sm:text-lg">
           Here are some of my GitHub repositories.
         </p>
 
+        {/* Projects Grid */}
         <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {repos.slice(0, 6).map((repo) => (
             <div
               key={repo.id}
-              className="bg-gray-100 dark:bg-slate-800 p-6 rounded-2xl shadow hover:shadow-lg transition"
+              className="bg-gray-100 dark:bg-slate-800 p-4 sm:p-6 rounded-2xl shadow hover:shadow-lg transition"
               data-aos="fade-up"
             >
-              <h3 className="text-xl font-semibold mb-2">{repo.name}</h3>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2">
+                {repo.name}
+              </h3>
               <p className="text-sm text-gray-600 dark:text-gray-300 mb-4">
                 {repo.description || "No description provided."}
               </p>
@@ -47,15 +50,17 @@ const Projects = () => {
         </div>
 
         {/* GitHub Contributions Graph */}
-        <div className="mt-16">
-          <h3 className="text-3xl font-semibold mb-4">GitHub Contributions</h3>
+        <div className="mt-12 sm:mt-16">
+          <h3 className="text-2xl sm:text-3xl font-semibold mb-4">
+            GitHub Contributions
+          </h3>
           <div className="flex justify-center">
             <GitHubCalendar
               username="yogeshawasthi"
               colorScheme="dark"
-              blockSize={15}
-              blockMargin={5}
-              fontSize={14}
+              blockSize={12}
+              blockMargin={4}
+              fontSize={12}
             />
           </div>
         </div>
