@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar.jsx";
 import HeroSection from "./Components/HeroSection";
 import About from "./Components/About";
@@ -17,11 +18,13 @@ function App() {
   return (
     <>
       <Navbar />
-      <HeroSection />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </>
   );

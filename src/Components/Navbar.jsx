@@ -36,12 +36,12 @@ const Navbar = () => {
         }`}
       >
         <li>
-          <a href="#about" className="hover:text-indigo-400">
+          <a href="/about" className="hover:text-indigo-400">
             About
           </a>
         </li>
         <li>
-          <a href="#projects" className="hover:text-indigo-400">
+          <a href="/projects" className="hover:text-indigo-400">
             Projects
           </a>
         </li>
@@ -53,6 +53,12 @@ const Navbar = () => {
         <li>
           <a href="#contact" className="hover:text-indigo-400">
             Contact
+          </a>
+        </li>
+
+        <li>
+          <a href="/signup" className="hover:text-indigo-400">
+            Signup
           </a>
         </li>
       </ul>
