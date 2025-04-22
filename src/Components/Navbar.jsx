@@ -35,6 +35,15 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden md:flex"
         }`}
       >
+
+
+<li>
+          <a href="/" className="hover:text-indigo-400">
+           Home
+          </a>
+        </li>
+
+
         <li>
           <a href="/about" className="hover:text-indigo-400">
             About
